@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bubble Tea</title>
+	<meta charset="utf-8">
+	<script src="a10.js" defer></script>
+
+	<style>
+		table, td{
+			border:1px solid black;
+			border-collapse: collapse;
+		}
+		
+	</style>
+</head>
+<body>
+
+	<h1>CPSC 1045 Bubble Tea Ordering</h1>
+
+	<h3>Select your tea type</h3>
+	<p>
+		<input type="radio" name="teatype" value="Red">Red
+	</p>
+	<p>
+		<input type="radio" name="teatype" value="Green">Green
+	</p>
+	<p>
+		<input type="radio" name="teatype" value="Black">Black
+	</p>
+
+	<h3>Select your toppings</h3>
+	<p>
+		<input type="checkbox" name="topping" value="Pearls">Pearls
+	</p>
+	<p>
+		<input type="checkbox" name="topping" value="Mango Stars">Mango Stars
+	</p>
+	<p>
+		<input type="checkbox" name="topping" value="Grass Jelly">Grass Jelly
+	</p>
+	<p>
+		<input type="checkbox" name="topping" value="Coconut Jelly">Coconut Jelly
+	</p>
+
+	<input type="button" value="Add Topping" id="addTopping">
+	<input type="button" value="Remove Topping" id="removeTopping">
+
+	<br><br>
+
+	<p>Current Toppings: <ul id="tp"></ul></p>
+
+	<h3>Would you like Milk</h3>
+
+	<select id="milk">
+		<option value="No">No</option>
+		<option value="Yes">Yes</option>
+	</select>
+
+	<br>
+
+	<input type="button" value="Add Drink" id="addDrink">
+	<input type="button" value="Remove Drink" id="removeDrink">
+	<input type="button" value="Empty Order" id="emptyOrder">
+
+	<table id="tb"></table>
+
+
+
+</body>
+</html>
